@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Data Structures Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Data Structures Lab</h1>
+        <p class="sub">Array, Stack, Queue, Linked List vagere ma darek operation step-by-step juo.</p>
+        <div class="card">
+            <div class="chips" id="chips" role="group" aria-label="Data structure"></div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <input type="text" id="a" aria-label="Value" inputmode="numeric" style="max-width:150px;flex:none"
+                    placeholder="value (1-99)">
+                <input type="text" id="b" aria-label="Index" inputmode="numeric" style="max-width:190px;flex:none"
+                    placeholder="index">
+                <button id="rs">Sample data</button><button id="clr">Clear</button>
+            </div>
+            <div class="row" id="ops"></div>
+        </div>
+        <div class="card">
+            <div class="stage"><svg id="svg" role="img" aria-label="Data structure"></svg></div>
+            <div class="legend"><span><b style="background:var(--cmp)"></b>Check / compare</span><span><b
+                        style="background:var(--srt)"></b>Navu / mali gayu</span><span><b
+                        style="background:var(--swp)"></b>Delete / move</span><span><b
+                        style="background:var(--piv)"></b>Special (prev node)</span></div>
+        </div>
+        <div class="card">
+            <p class="msg" id="msg" aria-live="polite"></p>
+            <div class="row" style="margin-top:8px">
+                <button id="rst">Reset</button><button id="prev">Pachhal</button><button id="play"
+                    class="go">Play</button><button id="next">Aagal</button>
+                <label class="meta">Speed <input type="range" id="spd" min="1" max="10" value="5"></label>
+                <span class="meta" id="cnt"></span>
+            </div>
+        </div>
+        <div class="card"><b id="an"></b>
+            <p id="ad" style="margin:4px 0"></p>
+            <p class="meta" id="ac" style="margin:0"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
